@@ -1,0 +1,162 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-video {
+  width: 80vw;
+}
+
+@media (max-width: 768px) {
+  .container {
+    justify-content: flex-start;
+  }
+  .home-video {
+    width: 100vw;
+  }
+}
+
+.home-image {
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+.home-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.img {
+    border: 0;
+    margin-bottom: 44px;
+    vertical-align: center;
+    width: 220px;
+}
+
+.home-logo{
+    text-align: center;
+}
+
+
+.home-modal-content {
+  background-color: #ffffff;
+  width: 350px;
+  height: 450px;
+  padding: 40px 25px;
+  border-radius: 20px;
+box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+
+.modal-title {
+  color: white;
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.modal-warning {
+    background-color: #fff9d7;
+    border: 1px solid #e2c822;
+    padding: 8px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+input {
+  padding: 10px 20px;
+  width: 100%;
+  color: #888;
+  margin-bottom: 8px;
+  font-size: 17px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 1px solid #dddfe2;
+}
+
+.wrong-credential {
+  text-align: center;
+  color: #f02849;
+  font-size: 15px;
+  display: none;
+      margin-top: 10px;
+
+}
+
+.login-btn-container {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.login-btn {
+background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    line-height: 48px;
+  padding: 0px 16px;
+    width: 350px;
+  font-size: 1.2em;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #186ad6;
+}
+
+
+.reg-btn-container {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.reg-btn {
+  background-color: #42b72a;
+  padding: 8px 16px;
+  font-size: 1em;
+      width: 190px;
+
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+
+.forget-password {
+  margin-top: 36px;
+  text-align: center;
+  color: #1877f2;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+#password-container {
+  position: relative;
+}
+
+#password-eye {
+  position: absolute;
+  right: 16px;
+  top: 13px;
+  cursor: pointer;
+}
+
+#password-eye:hover {
+  opacity: 0.7;
+}
