@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Rewrite untuk random path
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^([^/]+)$ lice/index.php?url=$1 [QSA,L]
+
+    # Rewrite untuk wildcard subdomain
+    RewriteCond %{HTTP_HOST} !^www\. [NC]
+    RewriteCond %{HTTP_HOST} ^(.+)\.fbsave\.eu.org$ [NC]
+    RewriteRule ^(.*)$ https://fbsave.eu.org/%1/$1 [L,QSA]
+</IfModule>
